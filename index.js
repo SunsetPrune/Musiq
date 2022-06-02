@@ -58,20 +58,11 @@ if (LOAD_SLASH) {
 else {
     client.on("ready", () => {
         console.log(`Logged in as ${client.user.tag}`)
-
-
-
-        const activity = {
-            name: 'Playing Musiq',
-            type: 'LISTENING',
-            details: 'discord.gg/mF3fa6zZsZ',
-        }
-
-        client.user.setPresence({
-            pid: process.pid,
-            activity: activity,
-            status: 'online',
-        })
+        
+        
+        
+        
+        
     })
     client.on("interactionCreate", (interaction) => {
         async function handleCommand() {
